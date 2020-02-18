@@ -49,3 +49,5 @@ echo "export EDITOR='gedit -w'" >> ~/.bashrc
 echo "alias git-up='git add . && git commit -m "Update on 'date'" && git push origin master'" >> ~/.bashrc
 
 source ~/.bashrc
+clear
+echo "The Workspace is READY!"
