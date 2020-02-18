@@ -7,3 +7,6 @@ Here are the steps for installing ROS-Kinetic on Raspbian Buster:
 2. cd kineticPi/
 3. ./installROSkineticPi.sh
 
+> Creating the ROS Workspace
+Here is the step:
+1. ./setupROSworkspace.sh
