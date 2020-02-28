@@ -8,7 +8,7 @@
 echo "Setup ROS Repositories"
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-sudo apt-get updates
+sudo apt-get update
 sudo apt-get upgrade
 
 echo "Install Bootstrap Dependencies"
@@ -52,6 +52,9 @@ sudo update-alternatives --set cc /usr/bin/gcc
 sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30
 sudo update-alternatives --set c++ /usr/bin/g++
 sudo apt install -y python-rosdep python-rosinstall-generator python-wstool python-rosinstall build-essential cmake
+
+gedit /home/pi/ros_catkin_ws/src/opencv3/modules/python/src2/cv2.cpp
+
 
 sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/kinetic
 
