@@ -45,11 +45,17 @@
 >> replace:
 >>
 >>> logWarn
+>>
 >> to
+>>
 >> CONSOLE_BRIDGE_logWarn
+>>
 >> and
+>>
 >>> logError
+>>
 >> to
+>>
 >> CONSOLE_BRIDGE_logError
 
 **INSTALLING GEDIT**
