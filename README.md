@@ -41,7 +41,9 @@
 
 > IF ERROR PERSIST! -- logWarn, logError
 >> gedit /home/pi/ros_catkin_ws/src/geometry2/tf2/src/buffer_core.cpp
+>>
 >> replace:
+>>
 >>> logWarn
 >> to
 >> CONSOLE_BRIDGE_logWarn
