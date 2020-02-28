@@ -34,10 +34,21 @@
 
 > IF ERROR PERSIST! -- python_qt_binding
 >> 1. cd ~/ros_catkin_ws/src
->> 2. sudo rm -rf qt_gui_core
+>> 2. sudo rm -rf python_qt_binding
 >> 3. git clone https://github.com/ros-visualization/python_qt_binding.git
 >> 4. cd ~/ros_catkin_ws
 >> 5. ./installROSkineticPi.sh
+
+> IF ERROR PERSIST! -- logWarn, logError
+>> gedit /home/pi/ros_catkin_ws/src/geometry2/tf2/src/buffer_core.cpp
+>> replace:
+>>> logWarn
+>> to
+>> CONSOLE_BRIDGE_logWarn
+>> and
+>>> logError
+>> to
+>> CONSOLE_BRIDGE_logError
 
 **INSTALLING GEDIT**
 1. sudo apt-get install gedit
