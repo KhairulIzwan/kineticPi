@@ -18,7 +18,7 @@ here is the script files which will save your time buddies!
 >> 3. cd ~/ros_catkin
 >> 4. ./installROSkineticPi_resume.sh
 
-> IF ERROR PERSIST! -- camera_calibration_parser
+> **IF ERROR PERSIST! -- camera_calibration_parser**
 >> 1. cd ~/ros_catkin_ws/src/image_common/camera_calibration_parsers
 >> 2. gedit CMakelist.txt
 >> 3. Add on:
@@ -26,21 +26,21 @@ here is the script files which will save your time buddies!
 >> 4. cd ~/ros_catkin_ws
 >> 5. ./installROSkineticPi_resume.sh
 
-> IF ERROR PERSIST! -- qt_gui_core
+> **IF ERROR PERSIST! -- qt_gui_core**
 >> 1. cd ~/ros_catkin_ws/src
 >> 2. sudo rm -rf qt_gui_core
 >> 3. git clone https://github.com/ros-visualization/qt_gui_core.git
 >> 4. cd ~/ros_catkin_ws
 >> 5. ./installROSkineticPi_resume.sh
 
-> IF ERROR PERSIST! -- python_qt_binding
+> **IF ERROR PERSIST! -- python_qt_binding**
 >> 1. cd ~/ros_catkin_ws/src
 >> 2. sudo rm -rf python_qt_binding
 >> 3. git clone https://github.com/ros-visualization/python_qt_binding.git
 >> 4. cd ~/ros_catkin_ws
 >> 5. ./installROSkineticPi.sh
 
-> IF ERROR PERSIST! -- logWarn, logError
+> **IF ERROR PERSIST! -- logWarn, logError**
 >> gedit /home/pi/ros_catkin_ws/src/geometry2/tf2/src/buffer_core.cpp
 >>
 >> replace:
