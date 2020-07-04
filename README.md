@@ -8,7 +8,7 @@ here is the script files which will save your time buddies!
 2. cd kineticPi/
 3. ./installROSkineticPi.sh
 
-> IF ERROR PERSIST! -- OpenCV
+> **IF ERROR PERSIST! -- OpenCV**
 >> 1. gedit /home/pi/ros_catkin_ws/src/opencv3/modules/python/src2/cv2.cpp
 >> 2. Find line 885
 >> Replace:
